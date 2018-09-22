@@ -1,4 +1,4 @@
-var Constants = require('./lib/Constants');
+import { LOG_LEVELS } from './lib/Constants';
 
-exports.FtpServer = require('./lib/FtpServer');
-exports.LOG_LEVELS = Constants.LOG_LEVELS;
+export const FtpServer = require('./lib/FtpServer').default;
+export const LOG_LEVELS = LOG_LEVELS;
